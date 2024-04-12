@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vinyl's Lovers</title>
+    
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    
+        <link rel="stylesheet" href="styles.css">
+        
+    </head>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg">
+        <a class="navbar-brand" href="index.html" id="brand"><img src="img/logo.png" alt="logo" class="img-fluid"></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>                    
+                    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item active" >
+              <a class="nav-link" href="index.html" id="primerEnlace"> Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="discos.html" id="segundoEnlace">Discos</a>
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link" href="entrar.html" id="tercerEnlace">Entrar</a>
+            </li>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contacto.html" id="cuartoEnlace">Contacto</a>
+            </li>
+            <li class="nav-item"> 
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-8">
+                            <input class="form-control" type="search" placeholder="Buscar disco" aria-label="buscar">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <button class="btn btn-secondary" type="submit">Buscar</button>
+                        </div>
+                    </div>
+                </form>
+            </li>
+          </ul> 
+        </div>
+    </nav>
+  
+    <h1>Discos a la venta</h1>
+
+    <p id="actualizacion" style="color: black; text-align: center;">Última actualización: </p>
+
+    <div class="filtros">
+        <div class="row justify-content-center">
+                <div class="col-md-4 col-lg-3">
+                    <p>Filtrar por género:</p>
+                    <select id="inputCategoria" class="form-control">
+                        <option selected>Seleccionar...</option>
+                        <option>Pop</option>
+                        <option>Rock</option>
+                        <option>Indie</option>
+                        <option>Rap</option>
+                        <option>Jazz</option>
+                        <option>Chileno</option>
+                        <option>Reggaeton</option>
+                    </select>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <p>Filtrar por formato:</p>
+                    <select id="inputArtista" class="form-control">
+                        <option selected>Seleccionar...</option>
+                        <option>Vinilo</option>
+                        <option>CD</option>
+                        <option>Cassette</option>
+                    </select>
+                </div>
+            </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-md-4 col-lg-3">
+            <div class="card">
+                <img class="card-img-top" src="img/sufjan-javelin.jfif" alt="sufjan">
+                <div class="card-body">
+                    <h3 class="card-title">Sufjan Stevens - Javelin</h3>
+                    <ul>
+                        <li>Género: Indie</li>
+                        <li>Vinilo</li>
+                        <li>2024</li>
+                        <li>$20.000</li>
+                    </ul>
+                    <button class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Agregar a carrito</button>
+                </div>
+            </div> 
+        </div>
+        <div class="col-md-4 col-lg-3">
+            <div class="card">
+                <img class="card-img-top" src="img/sufjan-javelin.jfif" alt="sufjan">
+                <div class="card-body">
+                    <h3 class="card-title">Sufjan Stevens - Javelin</h3>
+                    <ul>
+                        <li>Género: Indie</li>
+                        <li>Vinilo</li>
+                        <li>2024</li>
+                        <li>$20.000</li>
+                    </ul>
+                    <button class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Agregar a carrito</button>
+                </div>
+            </div> 
+        </div>
+        <div class="col-md-4 col-lg-3">
+            <div class="card">
+                <img class="card-img-top" src="img/sufjan-javelin.jfif" alt="sufjan">
+                <div class="card-body">
+                    <h3 class="card-title">Sufjan Stevens - Javelin</h3>
+                    <ul>
+                        <li>Género: Indie</li>
+                        <li>Vinilo</li>
+                        <li>2024</li>
+                        <li>$20.000</li>
+                    </ul>
+                    <button class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Agregar a carrito</button>
+                </div>
+            </div> 
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-4 col-lg-3">
+            <div class="card">
+                <img class="card-img-top" src="img/sufjan-javelin.jfif" alt="sufjan">
+                <div class="card-body">
+                    <h3 class="card-title">Sufjan Stevens - Javelin</h3>
+                    <ul>
+                        <li>Género: Indie</li>
+                        <li>Vinilo</li>
+                        <li>2024</li>
+                        <li>$20.000</li>
+                    </ul>
+                    <button class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Agregar a carrito</button>
+                </div>
+            </div> 
+        </div>
+        <div class="col-md-4 col-lg-3">
+            <div class="card">
+                <img class="card-img-top" src="img/sufjan-javelin.jfif" alt="sufjan">
+                <div class="card-body">
+                    <h3 class="card-title">Sufjan Stevens - Javelin</h3>
+                    <ul>
+                        <li>Género: Indie</li>
+                        <li>Vinilo</li>
+                        <li>2024</li>
+                        <li>$20.000</li>
+                    </ul>
+                    <button class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Agregar a carrito</button>
+                </div>
+            </div> 
+        </div>
+        <div class="col-md-4 col-lg-3">
+            <div class="card">
+                <img class="card-img-top" src="img/sufjan-javelin.jfif" alt="sufjan">
+                <div class="card-body">
+                    <h3 class="card-title">Sufjan Stevens - Javelin</h3>
+                    <ul>
+                        <li>Género: Indie</li>
+                        <li>Vinilo</li>
+                        <li>2024</li>
+                        <li>$20.000</li>
+                    </ul>
+                    <button class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Agregar a carrito</button>
+                </div>
+            </div> 
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-4 col-lg-3">
+            <div class="card">
+                <img class="card-img-top" src="img/sufjan-javelin.jfif" alt="sufjan">
+                <div class="card-body">
+                    <h3 class="card-title">Sufjan Stevens - Javelin</h3>
+                    <ul>
+                        <li>Género: Indie</li>
+                        <li>Vinilo</li>
+                        <li>2024</li>
+                        <li>$20.000</li>
+                    </ul>
+                    <button class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Agregar a carrito</button>
+                </div>
+            </div> 
+        </div>
+        <div class="col-md-4 col-lg-3">
+            <div class="card">
+                <img class="card-img-top" src="img/sufjan-javelin.jfif" alt="sufjan">
+                <div class="card-body">
+                    <h3 class="card-title">Sufjan Stevens - Javelin</h3>
+                    <ul>
+                        <li>Género: Indie</li>
+                        <li>Vinilo</li>
+                        <li>2024</li>
+                        <li>$20.000</li>
+                    </ul>
+                    <button class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Agregar a carrito</button>
+                </div>
+            </div> 
+        </div>
+        <div class="col-md-4 col-lg-3">
+            <div class="card">
+                <img class="card-img-top" src="img/sufjan-javelin.jfif" alt="sufjan">
+                <div class="card-body">
+                    <h3 class="card-title">Sufjan Stevens - Javelin</h3>
+                    <ul>
+                        <li>Género: Indie</li>
+                        <li>Vinilo</li>
+                        <li>2024</li>
+                        <li>$20.000</li>
+                    </ul>
+                    <button class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Agregar a carrito</button>
+                </div>
+            </div> 
+        </div>
+      </div>
+    </div>  
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">¿Seguro?</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Haz click en 'Confirmar' para agregar al carrito.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Confirmar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script>
+        // Verifica si el usuario está autenticado leyendo el parámetro de la URL
+        var parametrosURL = new URLSearchParams(window.location.search);
+        var autenticado = parametrosURL.get('autenticado');
+      
+        if (autenticado === 'true') {
+          // Selecciona el elemento del navbar y cámbialo
+
+          var enlaceBrand = document.getElementById('brand');
+          enlaceBrand.href = "index.html?autenticado=true";
+
+          var primerEnlace = document.getElementById('primerEnlace');
+          primerEnlace.href = "index.html?autenticado=true";
+            
+          var segundoEnlace = document.getElementById('segundoEnlace');
+          segundoEnlace.href = "productos.html?autenticado=true";
+
+          var tercerEnlace = document.getElementById('tercerEnlace');
+          tercerEnlace.href = 'miCuenta.html';
+          tercerEnlace.textContent = 'Mi Cuenta';
+
+          var cuartoEnlace = document.getElementById('cuartoEnlace');
+          cuartoEnlace.href = 'contacto.html?autenticado=true';
+        }
+      </script>
+      
+      <script>
+          document.getElementById('actualizacion').innerHTML += Date();
+      </script>
+
+</body>
+</html>
