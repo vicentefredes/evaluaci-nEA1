@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vinyl's Lovers</title>
+    
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    
+        <link rel="stylesheet" href="styles.css">
+        
+    </head>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg">
+        <a class="navbar-brand" href="index.html" id="brand"><img src="img/logo.png" alt="logo" class="img-fluid"></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>                    
+                    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item" >
+              <a class="nav-link" href="index.html" id="primerEnlace"> Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="discos.html" id="segundoEnlace">Discos</a>
+            </li>
+            <li class="nav-item active" >
+              <a class="nav-link" href="entrar.html" id="tercerEnlace">Entrar</a>
+            </li>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contacto.html" id="cuartoEnlace">Contacto</a>
+            </li>
+            <li class="nav-item"> 
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-8">
+                            <input class="form-control" type="search" placeholder="Buscar disco" aria-label="buscar">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <button class="btn btn-secondary" type="submit">Buscar</button>
+                        </div>
+                    </div>
+                </form>
+            </li>
+          </ul> 
+        </div>
+    </nav>
+  
+    <h1>Inicia Sesión o Regístrate</h1>
+
+    <div class="container-fluid">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-5 col-lg-4">
+          <form class="autenticacion">
+              <h2>¿Ya tienes cuenta? ¡Entra!</h2>
+              <div class="form-row">
+                <div class="form-group col-md-8">
+                  <label for="inputEmail4">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-8">
+                  <label for="inputPassword4">Contraseña</label>
+                  <input type="password" class="form-control" id="inputPassword4" placeholder="************">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-12" style="text-align: center; vertical-align: middle;">
+                  <button type="submit" id="botonEntrar" class="btn btn-secondary">Entrar</button>
+                </div>  
+              </div>
+          </form>     
+        </div>
+          <div class="col-md-5 col-lg-4">
+            <form class="autenticacion" id="registroForm">
+                <h2>¿No tienes cuenta? ¡Únete!</h2>
+                <div class="form-row">
+                  <div class="form-group col-md-8">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-8">
+                    <label for="inputEmail4">Nombre</label>
+                    <input type="text" class="form-control" id="inputEmail4" placeholder="Nombre">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-8">
+                    <label for="inputPassword4">Contraseña</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="************">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-12" style="text-align: center; vertical-align: middle;">
+                    <button type="submit" id ="botonRegistro" class="btn btn-secondary">Registrarse</button>
+                  </div>  
+                </div>
+            </form>
+  
+            <div class="alert alert-success" role="alert"id="mensajeRegistro" style="display: none;">
+              <h4>Usuario registrado con éxito. </h4>
+              <p>Ya puede iniciar sesión.</p> 
+            </div>
+                  
+        </div>
+      </div>
+    </div>
+  
+  <script>
+      // Selecciona el botón de enviar
+      var botonEntrar = document.getElementById('botonEntrar');
+      
+      // Agrega un event listener para escuchar el evento 'click' en el botón
+      botonEntrar.addEventListener('click', function() {
+        // Detiene el comportamiento predeterminado del botón (enviar el formulario)
+        event.preventDefault();
+  
+        window.alert('Ha iniciado sesión correctamente.');
+  
+        // Redirige a la página "miCuenta.html"
+        window.location.href = 'miCuenta.html';
+      });
+    </script>
+  
+  <script>
+      // Selecciona el formulario de registro
+      var formularioRegistro = document.getElementById('registroForm');
+  
+      // Agrega un event listener para escuchar el evento 'submit' en el formulario
+      formularioRegistro.addEventListener('submit', function(event) {
+        // Detiene el comportamiento predeterminado del formulario (enviar)
+        event.preventDefault();
+  
+        // Muestra el mensaje de registro exitoso
+        var mensajeRegistro = document.getElementById('mensajeRegistro');
+        mensajeRegistro.style.display = 'block';
+      });
+    </script>
+      
+
+</body>
+</html>

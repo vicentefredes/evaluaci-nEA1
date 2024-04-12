@@ -103,6 +103,67 @@ h1 {
     margin-bottom: 50px;
 }
 
+.autenticacion {
+    justify-content: center;
+    background-color: rgb(249, 241, 255);
+    margin-bottom: 20px;
+}
+
+.autenticacion h2 {
+    background-color: rgb(0, 78, 140);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-bottom: 2px solid black;
+    margin-bottom: 5%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.autenticacion .form-row {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.autenticacion .btn-secondary {
+    background-color: rgb(0, 78, 140);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.inicioUsuario h3 {
+    text-align: center;
+    color: white;
+    background-color: rgb(0, 78, 140);
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.infoUsuario {
+    background-color: whitesmoke;
+    padding-top: 5%;
+    padding-bottom: 7%;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: -10px;
+}
+
+.infoUsuario ul {
+    font-size: 18px;
+    margin-bottom: 7%;
+}
+
+.infoUsuario .btn-secondary {
+    background-color: rgb(0, 78, 140);
+    font-size: 20px;
+    width: 70%;
+    margin-bottom: 5%;
+}
+
 .formulario {
     background-color: white;
     color: rgb(20, 29, 43);
